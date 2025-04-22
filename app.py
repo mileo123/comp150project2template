@@ -19,7 +19,7 @@ def start_game():
 # Route for displaying the game page
 @app.route('/game')
 def game():
-    # Render the game with necessary info (you can show current game state here)
+    # Render the game
     return render_template('game.html', characters=characters, powers=powers, health=health, inventory=inventory)
 
 # Route for the fight page
